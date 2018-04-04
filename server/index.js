@@ -31,7 +31,7 @@ app.post('/api/cart', cartCtrl.add);
 app.post('/api/cart/checkout', cartCtrl.checkout);
 app.delete('/api/cart', cartCtrl.delete);
 
-app.search('/api/search', searchCtrl.search)
+app.get('/api/search', searchCtrl.search)
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
